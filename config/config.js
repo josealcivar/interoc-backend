@@ -7,16 +7,16 @@ module.exports = {
         secret: process.env.JWT_SECRET || 'notasecret!',
     },
     postgres_remote: {
-        host: process.env.MYSQL_HOST || 'localhost',
+        host: process.env.POSTGRESS_LOCAL_HOST || 'localhost',
         user: process.env.MYSQL_USER || 'root',
         password: process.env.MYSQL_PASS || '',
         database: process.env.MYSQL_DB || 'chatplatzi',
     },
     postgres: {
-        host: process.env.MYSQL_HOST || 'us-cdbr-iron-east-03.cleardb.net',
-        user: process.env.MYSQL_USER || 'bd5facea6e05a5',
-        password: process.env.MYSQL_PASS || 'd934b2cd',
-        database: process.env.MYSQL_DB || 'heroku_eeb2cd690834874',
+        host: process.env.POSTGRESS_LOCAL_HOST || 'us-cdbr-iron-east-03.cleardb.net',
+        user: process.env.POSTGRESS_LOCAL_USER || 'bd5facea6e05a5',
+        password: process.env.POSTGRESS_LOCAL_PASS || 'd934b2cd',
+        database: process.env.POSTGRESS_LOCAL_DB || 'heroku_eeb2cd690834874',
     },
     // mysqlService: {
     //     host: process.env.MYSQL_SERV_HOST || 'localhost',
