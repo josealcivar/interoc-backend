@@ -1,0 +1,7 @@
+sequelize model:generate --name RubroViatico --attributes description:string,valor:decimal,estado:string --force
+sequelize model:generate --name CatalogoViajes --attributes description:string,estado:string --force
+sequelize model:generate --name TipoViaje --attributes description:string,estado:string --force
+sequelize model:generate --name User --attributes firstname:string,lastname:string,username:string,estado:string --force
+sequelize model:generate --name Auth --attributes username:string,password:string,estado:string --force
+
+npx sequelize-cli seed:generate --name catalogoviajes

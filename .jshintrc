@@ -1,0 +1,11 @@
+{
+    "node": true,
+    "undef": true,
+    "unused": true,
+
+    "strict": true,
+    "esnext": true,
+    "globals": {
+        "MY_GLOBAL": false
+    }
+}
